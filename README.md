@@ -23,6 +23,36 @@ Moreover,
 
 ## Code Style & Example
 
+The project followed [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html).
+<br />
+I've included a coding sample, which is an implementation of Shell Sort:
+
+```
+	public static <T extends Comparable<T>> List<SortEvent<T>> shellSort(T[] arr) {
+		List<SortEvent<T>> events = new ArrayList<SortEvent<T>>();
+	    for (int gap = arr.length / 2; gap > 0; gap /= 2) {
+	        // insertion sort here
+	        for (int i = gap; i < arr.length; i++) {
+	            T val = arr[i];
+	            int j;
+	            
+	            for (j = i; j >= gap && arr[j - gap].compareTo(val) > 0; j -= gap) {
+	            	events.add(new CompareEvent<T>(j - gap, i));
+	            	events.add(new CopyEvent<T>(j, arr[j - gap]));
+	            	
+	                arr[j] = arr[j - gap];
+	            }
+	            
+	            events.add(new CopyEvent<T>(j, val));
+	            arr[j] = val;
+	        }
+	    }
+	    return events;
+	}
+```
+
+
+
 ## Tests
 
 ## References 
