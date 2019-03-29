@@ -29,8 +29,8 @@ I've included a coding sample, which is an implementation of Shell Sort:
 
 ```
 public static <T extends Comparable<T>> List<SortEvent<T>> shellSort(T[] arr) {
-List<SortEvent<T>> events = new ArrayList<SortEvent<T>>();
-        for (int gap = arr.length / 2; gap > 0; gap /= 2) {
+    List<SortEvent<T>> events = new ArrayList<SortEvent<T>>();
+    for (int gap = arr.length / 2; gap > 0; gap /= 2) {
         // insertion sort here
         for (int i = gap; i < arr.length; i++) {
             T val = arr[i];
