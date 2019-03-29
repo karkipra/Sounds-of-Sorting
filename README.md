@@ -11,7 +11,7 @@ The sorting algorithms that I chose to use are as follows:
 - Bubble Sort
 - Merge Sort
 - Quick Sort
-- Shell Sort (more information on #References)
+- Shell Sort (more information at [references](https://github.com/karkipra/Sounds-of-Sorting#references))
 
 ## Features
 
