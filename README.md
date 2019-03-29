@@ -24,7 +24,7 @@ Here is a demo of the program after successful deployment:
 
 ###### Demo with all sorting algorithms
 
-<img src="/demo/Sortings.gif?raw=true"  width="700" height="700">
+<img src="/demo/Sortings.gif?raw=true"  width="600" height="600">
 <!-- ![](demo/Sortings.gif) -->
 
 ## Code Style & Example
