@@ -17,9 +17,14 @@ The sorting algorithms that I chose to use are as follows:
 
 This program illustrates a visceral method of showing the workings behind these common sorting algorithms. Furthermore, these algorithms are implemented on two types of scales: **chromatic** and **pentatonic**. As any music lover should know, a chromatic scale encompasses all standard 12 notes per octave, while a pentatonic scale operates only on 5 notes per octave.
 
-Moreover, 
-
 ## Presentation
+
+Here is a demo of the program after successful deployment:
+<br />
+
+###### Demo with all sorting algorithms
+
+![](demo/Sortings.gif)
 
 ## Code Style & Example
 
@@ -48,13 +53,16 @@ public static <T extends Comparable<T>> List<SortEvent<T>> shellSort(T[] arr) {
 }
 ```
 
-
-
-## Tests
+<!-- ## Tests -->
 
 ## References 
 
-https://en.wikipedia.org/wiki/Sorting_algorithm
+- Sorting algorithms based on this [Wikipedia article](https://en.wikipedia.org/wiki/Sorting_algorithm).
+- Shell sort algorithm was based on this tutorial and explanation by [GeeksForGeeks](https://www.geeksforgeeks.org/shellsort/).
+
+
+
+
 
 
 
